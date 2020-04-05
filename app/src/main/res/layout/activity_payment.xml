@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/activityPaymentCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/activityPaymentCVC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="CVC"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/activityPaymentCardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/activityPaymentCardNumber" />
+
+    <Button
+        android:id="@+id/activityPaymentPayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="makePayment"
+        android:text="buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/activityPaymentSurname"
+        app:layout_constraintStart_toStartOf="@+id/activityPaymentSurname"
+        app:layout_constraintTop_toBottomOf="@+id/ActivityPaymentTextView" />
+
+    <EditText
+        android:id="@+id/activityPaymentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/activityPaymentCVC"
+        app:layout_constraintTop_toBottomOf="@+id/activityPaymentCVC" />
+
+    <EditText
+        android:id="@+id/activityPaymentSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/activityPaymentName"
+        app:layout_constraintTop_toBottomOf="@+id/activityPaymentName" />
+
+    <TextView
+        android:id="@+id/ActivityPaymentTextView"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="346dp"
+        android:gravity="center"
+        android:textColor="#0033ff"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/activityPaymentPayButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

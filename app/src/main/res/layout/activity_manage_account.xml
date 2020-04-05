@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/signUpSignUpActivityActivitySurnameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ManageAccountActivityNameText"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Manage Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ManageAccountActivityNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/signUpSignUpActivityActivitySurnameText"
+        app:layout_constraintEnd_toStartOf="@+id/signUpSignUpActivityActivitySurnameText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ManageAccountActivityEmailText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="59dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ManageAccountActivityNameText" />
+
+    <EditText
+        android:id="@+id/ManageAccountActivityDateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="Date Of Bith"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/ManageAccountActivityRadioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/ManageAccountActivityRadioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ManageAccountActivityRadioGroup" />
+
+    <EditText
+        android:id="@+id/ManageAccountActivitySSNText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="SSN"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ManageAccountActivityDateOfBirth" />
+
+    <EditText
+        android:id="@+id/ManageAccountActivityPasswordText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ManageAccountActivitySSNText" />
+
+    <Button
+        android:id="@+id/ManageAccountActivitySaveChangesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="1dp"
+        android:onClick="saveChanges"
+        android:text="Save Changes"
+        app:layout_constraintBottom_toBottomOf="@+id/ManageAccountactivityFreezeSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ManageAccountactivityFreezeSwitch" />
+
+    <RadioGroup
+        android:id="@+id/ManageAccountActivityRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ManageAccountActivityDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/ManageAccountActivityEmailText">
+
+        <RadioButton
+            android:id="@+id/ManageAccountActivityFemailRadioButton"
+            android:layout_width="117dp"
+            android:layout_height="31dp"
+            android:text="Female"
+            tools:layout_editor_absoluteX="203dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <RadioButton
+            android:id="@+id/ManageAccountActivityMaleRadioButton"
+            android:layout_width="117dp"
+            android:layout_height="37dp"
+            android:text="Male"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="231dp" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/ManageAccountactivityFreezeSwitch"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="51dp"
+        android:text="Freeze Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ManageAccountActivitySaveChangesButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

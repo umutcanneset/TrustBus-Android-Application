@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/activityAdminAddManagerButton"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:onClick="addManager"
+        android:text="Add Manager"
+        app:layout_constraintBottom_toTopOf="@+id/activityAdminDeleteManagerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityAdminTextHomepage" />
+
+    <Button
+        android:id="@+id/activityAdminDeleteManagerButton"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="deleteManager"
+        android:text="Delete Manager"
+        app:layout_constraintBottom_toTopOf="@+id/adminActivityManageBookingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityAdminAddManagerButton" />
+
+    <Button
+        android:id="@+id/adminActivityManageBookingButton"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="manageBooking"
+        android:text="Manage Booking"
+        app:layout_constraintBottom_toTopOf="@+id/adminActivityEditBusScheduleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityAdminDeleteManagerButton" />
+
+    <TextView
+        android:id="@+id/activityAdminTextHomepage"
+        android:layout_width="129dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="24dp"
+        android:text="ADMIN HOMEPAGE"
+        app:layout_constraintBottom_toTopOf="@+id/activityAdminAddManagerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adminActivityEditBusScheduleButton"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="206dp"
+        android:onClick="editBus"
+        android:text="Edit Bus Schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminActivityManageBookingButton" />
+</android.support.constraint.ConstraintLayout>

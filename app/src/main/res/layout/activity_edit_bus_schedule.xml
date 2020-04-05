@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/editBusActivityAddTripButton"
+        android:layout_width="282dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="addTrip"
+        android:text="Add Trip"
+        app:layout_constraintBottom_toTopOf="@+id/editBusActivityUpdateTripButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/editBusActivityUpdateTripButton"
+        android:layout_width="275dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="updateTrip"
+        android:text="Update Trip"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBusActivityAddTripButton" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="181dp"
+        android:onClick="deleteTrip"
+        android:text="Delete Trip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editBusActivityUpdateTripButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editBusActivityAddTripButton"
+        app:layout_constraintTop_toBottomOf="@+id/editBusActivityUpdateTripButton" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/addManagerActivityGsmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Gsm Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addManagerActivityAddDatabaseButton"
+        app:layout_constraintStart_toStartOf="@+id/addManagerActivityPasswordText"
+        app:layout_constraintTop_toBottomOf="@+id/addManagerActivityPasswordText" />
+
+    <EditText
+        android:id="@+id/addManagerActivitySurnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addManagerActivityEmailText"
+        app:layout_constraintStart_toStartOf="@+id/addManagerActivityNameText"
+        app:layout_constraintTop_toBottomOf="@+id/addManagerActivityNameText" />
+
+    <EditText
+        android:id="@+id/addManagerActivityNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addManagerActivitySurnameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/addManagerActivitySsnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Ssn"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addManagerActivityPasswordText"
+        app:layout_constraintStart_toStartOf="@+id/addManagerActivityEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/addManagerActivityEmailText" />
+
+    <EditText
+        android:id="@+id/addManagerActivityEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addManagerActivitySsnText"
+        app:layout_constraintStart_toStartOf="@+id/addManagerActivitySurnameText"
+        app:layout_constraintTop_toBottomOf="@+id/addManagerActivitySurnameText" />
+
+    <Button
+        android:id="@+id/addManagerActivityAddDatabaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="addToDatabase"
+        android:text="Add To Database"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/addManagerActivityGsmText"
+        app:layout_constraintTop_toBottomOf="@+id/addManagerActivityGsmText" />
+
+    <EditText
+        android:id="@+id/addManagerActivityPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/addManagerActivityGsmText"
+        app:layout_constraintEnd_toEndOf="@+id/addManagerActivitySsnText"
+        app:layout_constraintTop_toBottomOf="@+id/addManagerActivitySsnText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="33dp"
+        android:text="Add Manager"
+        app:layout_constraintBottom_toTopOf="@+id/addManagerActivityNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

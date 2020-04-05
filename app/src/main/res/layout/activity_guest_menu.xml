@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/guestListTrips"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="79dp"
+        android:onClick="listTrips"
+        android:text="Lıst Trıps"
+        app:layout_constraintBottom_toTopOf="@+id/guestRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/guestRegister"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="165dp"
+        android:onClick="register"
+        android:text="Regıster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guestListTrips" />
+</android.support.constraint.ConstraintLayout>
